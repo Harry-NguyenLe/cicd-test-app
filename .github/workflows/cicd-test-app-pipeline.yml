@@ -24,3 +24,6 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build :app:bundleDebug :app:bundleRelease && find . -name "*apk"
+    - name: Run ktlint
+      uses: lucasnlm/ktlint-action@v1.0.1
+            
